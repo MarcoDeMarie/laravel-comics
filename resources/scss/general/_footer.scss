@@ -32,6 +32,11 @@ footer{
         color:$footer-list;
     }
 
+    li:hover{
+        cursor: pointer;
+        color: $navbar-hover;
+    }
+
     .bottom{
         background-color:$footer-bg;
         height: 90px;

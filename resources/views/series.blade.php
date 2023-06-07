@@ -13,7 +13,9 @@
 
                     @forelse ($series as $serie )
                     <div class="card">
-                        <img src="{{$serie['src']}}" alt="seriesName">
+                        <a href="{{ route('series-detail', ['slug' => $serie['slug']])}}">
+                            <img src="{{$serie['src']}}" alt="{{$serie['titolo']}}">
+                        </a>
                         <p>{{$serie['titolo']}}</p>
                     </div>
                     @empty

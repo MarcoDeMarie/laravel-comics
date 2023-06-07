@@ -57,3 +57,15 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('no-page');
 })->name('shop');
+
+
+Route::get('/series-detail/{slug}', function ($slug) {
+
+    $series = config('series');
+
+    $serie_array = array_filter($series, fn($object) => $object['slug'] = $slug);
+
+    $serie = $serie_array[1];
+
+    return view('series-detail', compact('serie'));
+})->name('series-detail');
