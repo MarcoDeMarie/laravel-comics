@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <main>
     <div class="jumbotron"></div>
         <div class="container">
@@ -9,46 +11,16 @@
                 <h1>CURRENT SERIES</h1>
                 <div class="wrapper">
 
+                    @forelse ($series as $serie )
                     <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
+                        <img src="{{$serie['src']}}" alt="seriesName">
+                        <p>{{$serie['titolo']}}</p>
                     </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-                        <p>Action Comics</p>
-                    </div>
+                    @empty
+
+                    @endforelse
+
+
 
                 </div>
 

@@ -25,6 +25,7 @@ main{
 
     .card{
         background-color: $main-bg;
+        border: 0;
         height: 200px;
         width: 200px;
         img{
@@ -37,6 +38,10 @@ main{
         display: flex;
         justify-content: center;
         }
+
+    }
+    .card :hover{
+        cursor: pointer;
     }
     .button{
         display: flex;
