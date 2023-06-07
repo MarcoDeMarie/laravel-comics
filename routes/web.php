@@ -15,4 +15,44 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/series', function () {
+    return view('series');
+})->name('series');
+
+Route::get('/characters', function () {
+    return view('no-page');
+})->name('characters');
+
+Route::get('/comics', function () {
+    return view('no-page');
+})->name('comics');
+
+Route::get('/movies', function () {
+    return view('no-page');
+})->name('movies');
+
+Route::get('/games', function () {
+    return view('no-page');
+})->name('games');
+
+Route::get('/collectibles', function () {
+    return view('no-page');
+})->name('collectibles');
+
+Route::get('/videos', function () {
+    return view('no-page');
+})->name('videos');
+
+Route::get('/fans', function () {
+    return view('no-page');
+})->name('fans');
+
+Route::get('/news', function () {
+    return view('no-page');
+})->name('news');
+
+Route::get('/shop', function () {
+    return view('no-page');
+})->name('shop');

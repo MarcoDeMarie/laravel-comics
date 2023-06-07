@@ -54,11 +54,11 @@
             <button>SIGN-UP NOW!</button>
             <div class="social">
                 <h2>FOLLOW US</h2>
-                {{-- <img src="/img/footer-facebook.png" alt="">
+                <img src="/img/footer-facebook.png" alt="">
                 <img src="/img/footer-twitter.png" alt="">
                 <img src="/img/footer-youtube.png" alt="">
                 <img src="/img/footer-pinterest.png" alt="">
-                <img src="/img/footer-periscope.png" alt=""> --}}
+                <img src="/img/footer-periscope.png" alt="">
             </div>
         </div>
     </div>

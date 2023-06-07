@@ -6,16 +6,16 @@
     <nav>
         <ul>
         <li>
-            <a href="#">CHARACTERS</a>
-            <a href="#">COMICS</a>
-            <a href="#">MOVIES</a>
-            <a href="#">TV</a>
-            <a href="#">GAMES</a>
-            <a href="#">COLLECTIBLES</a>
-            <a href="#">VIDEOS</a>
-            <a href="#">FANS</a>
-            <a href="#">NEWS</a>
-            <a href="#">SHOP</a>
+            <a href="{{ route('characters') }}">CHARACTERS</a>
+            <a href="{{ route('comics') }}">COMICS</a>
+            <a href="{{ route('movies') }}">MOVIES</a>
+            <a href="{{ route('series') }}">TV SERIES</a>
+            <a href="{{ route('games') }}">GAMES</a>
+            <a href="{{ route('collectibles') }}">COLLECTIBLES</a>
+            <a href="{{ route('videos') }}">VIDEOS</a>
+            <a href="{{ route('fans') }}">FANS</a>
+            <a href="{{ route('news') }}">NEWS</a>
+            <a href="{{ route('shop') }}">SHOP</a>
         </li>
         </ul>
     </nav>
